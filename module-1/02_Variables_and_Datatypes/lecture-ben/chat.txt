@@ -1,0 +1,88 @@
+09:07:38 From  Dustin Dobos  to  Everyone:
+	How do I raise my hand?
+09:07:49 From  Larry "Devin" Carter  to  Everyone:
+	in reactions
+09:08:18 From  Dustin Dobos  to  Everyone:
+	Replying to "in reactions"
+	
+	I see. Thank you
+09:08:34 From  Harry Simpson  to  Everyone:
+	or in "more" if your zoom window is not fullscreen
+09:08:51 From  Dustin Dobos  to  Everyone:
+	Reacted to "or in "more" if your..." with 👍
+09:11:50 From  Larry "Devin" Carter  to  Everyone:
+	Reacted to "I see. Thank you" with ❤️
+09:39:11 From  Karrington Gatlin  to  Everyone:
+	right click, open with, IntelliJ
+09:40:42 From  Quynh (Quinn)  to  Everyone:
+	Reacted to "right click, open wi..." with 👍
+10:03:07 From  Roberto Cedeno  to  Everyone:
+	If you do Control and press the class name
+10:03:40 From  Daniel To (He/Him)  to  Everyone:
+	Reacted to "If you do Control an..." with 👍
+10:03:50 From  Larry "Devin" Carter  to  Everyone:
+	Reacted to "If you do Control an..." with 👍
+10:03:57 From  Dustin Dobos  to  Everyone:
+	Replying to "If you do Control an..."
+	
+	Hey, it worked! Thanks
+10:04:01 From  Dustin Dobos  to  Everyone:
+	Reacted to "If you do Control an..." with 👍
+10:04:13 From  Larry "Devin" Carter  to  Everyone:
+	Replying to "If you do Control an..."
+	
+	The man, the myth, the legend.		Dude, that is super helpful.
+10:04:33 From  Quynh (Quinn)  to  Everyone:
+	Reacted to "If you do Control an..." with 😯
+10:04:39 From  Quynh (Quinn)  to  Everyone:
+	Reacted to "The man, the myth, t..." with 😂
+10:04:43 From  Dustin Dobos  to  Everyone:
+	Reacted to "The man, the myth, t..." with 👍
+10:09:16 From  Roberto Cedeno  to  Everyone:
+	Reacted to "The man, the myth, t..." with 😂
+10:09:26 From  Roberto Cedeno  to  Everyone:
+	Replying to "If you do Control an..."
+	
+	Of course!
+10:38:06 From  Larry "Devin" Carter  to  Everyone:
+	I think that's actually negative 2 because the positive numbers have to account for 0 but the negatives do not.
+10:38:29 From  Larry "Devin" Carter  to  Everyone:
+	Replying to "I think that's actua..."
+	
+	negative is always 1 more than positive
+10:48:48 From  Revathi  to  Everyone:
+	I thought i read in the reading material yesterday that the default datatype for whole number is an int?
+10:49:19 From  Umer Abubeker  to  Everyone:
+	Replying to "I thought i read in ..."
+	
+	yeah, you're right!.
+10:50:03 From  Quynh (Quinn) (she/her)  to  Everyone:
+	Replying to "I thought i read in ..."
+	
+	great catch
+10:50:07 From  Quynh (Quinn) (she/her)  to  Everyone:
+	Reacted to "I thought i read in ..." with ❤️
+11:15:26 From  Ben Langhinrichs (he/him)  to  Everyone:
+	Replying to "I thought i read in ..."
+	
+	Sorry, I made a mistake on that. It does default to int. I work with too many languages, and there is another I am using where it defaults to long.
+11:20:11 From  Quynh (Quinn) (she/her)  to  Everyone:
+	Reacted to "Sorry, I made a mist..." with 👍
+11:20:24 From  Revathi  to  Everyone:
+	Reacted to "Sorry, I made a mist..." with 👍
+11:21:20 From  Mike Rowan  to  Everyone:
+	Reacted to "Sorry, I made a mist..." with 👍
+11:22:01 From  Larry "Devin" Carter  to  Everyone:
+	Reacted to "Sorry, I made a mist..." with 👍
+11:24:38 From  Larry "Devin" Carter  to  Everyone:
+	And now I'm sad...		Firefly so good
+12:04:43 From  Karrington Gatlin  to  Everyone:
+	PEMDAS
+12:21:02 From  Harry Simpson  to  Everyone:
+	I don't think he's added our homework exercises to the upstream main branch yet @Alison Hall (she/her)
+12:21:20 From  Harry Simpson  to  Everyone:
+	its confusing they called these lecture examples exercises as well
+12:22:05 From  Alison Hall (she/her)  to  Everyone:
+	Reacted to "I don't think he's a..." with 👍
+12:22:10 From  Alison Hall (she/her)  to  Everyone:
+	Reacted to "its confusing they c..." with 👍

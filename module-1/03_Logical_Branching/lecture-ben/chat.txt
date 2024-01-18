@@ -1,0 +1,74 @@
+09:05:35 From  Revathi  to  Everyone:
+	how to open ppts which display during lecture?
+09:05:53 From  Harry Simpson  to  Everyone:
+	have you done git pull upstream main for today?
+09:06:00 From  Revathi  to  Everyone:
+	yes
+09:06:11 From  Harry Simpson  to  Everyone:
+	if so it should be in module 1 > 03 logical branching
+09:06:24 From  Revathi  to  Everyone:
+	ok thanks
+09:06:58 From  Harry Simpson  to  Everyone:
+	C:\Users\Student\workspace\harrison-simpson-student-code\module-1\ lecture is my file path
+09:07:25 From  Harry Simpson  to  Everyone:
+	Reacted to "ok thanks" with 👍
+09:08:44 From  Revathi  to  Everyone:
+	thanks
+09:09:31 From  Myron Law - Instructor (he - him)  to  Ben Langhinrichs (he/him)(Direct Message):
+	Do you normally record?  Just asking
+09:19:09 From  Harry Simpson  to  Everyone:
+	Revathi i guess we dont have lecture slides in that folder, i just assumed it would be in the lecture folder. sorry!
+09:20:05 From  Revathi  to  Everyone:
+	yes, i didn't find too. but i didn't want to disturb you further from to listening to lecture, so didn't ask again. its ok though. will figure out later
+09:20:31 From  Revathi  to  Everyone:
+	thanks anyway
+09:20:40 From  Harry Simpson  to  Everyone:
+	Reacted to "thanks anyway" with 👍
+10:33:48 From  Karrington Gatlin  to  Everyone:
+	did anyone else get this for question 7 :java: illegal start of expression
+10:35:02 From  Quynh (Quinn)  to  Everyone:
+	Replying to "did anyone else get ..."
+	
+	no, it works for me...
+10:35:09 From  Karrington Gatlin  to  Everyone:
+	Replying to "did anyone else get ..."
+	
+	okay
+10:35:20 From  Quynh (Quinn)  to  Everyone:
+	Replying to "did anyone else get ..."
+	
+	public boolean returnTrueWhenOneEqualsOne() {	        if (1 == 1) {	            return true;	        }		        return false;	    }
+10:35:24 From  Quynh (Quinn)  to  Everyone:
+	Replying to "did anyone else get ..."
+	
+	just this right?
+10:36:03 From  Karrington Gatlin  to  Everyone:
+	Replying to "did anyone else get ..."
+	
+	yeah thats what mines looks like
+10:36:23 From  Harry Simpson  to  Everyone:
+	Replying to "did anyone else get ..."
+	
+	semicolons?
+10:37:12 From  Karrington Gatlin  to  Everyone:
+	Replying to "did anyone else get ..."
+	
+	it looks like it has a issue with my paramerter spot, but i dont have anything here
+10:38:27 From  Harry Simpson  to  Everyone:
+	Replying to "did anyone else get ..."
+	
+	can you copy/paste yours?
+10:39:14 From  Karrington Gatlin  to  Everyone:
+	Replying to "did anyone else get ..."
+	
+	i found the issue i accidently deleted a }
+10:39:25 From  Harry Simpson  to  Everyone:
+	Reacted to "i found the issue i ..." with 👍
+10:39:36 From  Quynh (Quinn)  to  Everyone:
+	Reacted to "i found the issue i ..." with 🎉
+11:03:32 From  Quynh (Quinn)  to  Everyone:
+	great point @Revathi
+11:03:44 From  Revathi  to  Everyone:
+	Reacted to "great point @Revathi" with ❤️
+11:11:10 From  Larry "Devin" Carter  to  Everyone:
+	okay, that's cool

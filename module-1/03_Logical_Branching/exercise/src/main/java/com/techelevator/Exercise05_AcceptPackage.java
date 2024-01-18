@@ -24,7 +24,7 @@ public class Exercise05_AcceptPackage {
     acceptPackage(50) ➔ false
      */
     public boolean acceptPackage(int weightPounds) {
-        return false;
+        return (weightPounds <= MAX_WEIGHT_POUNDS);
     }
 
     /*
@@ -41,6 +41,10 @@ public class Exercise05_AcceptPackage {
     acceptPackage(50, 36, 24, 12) ➔ false
      */
     public boolean acceptPackage(int weightPounds, int lengthInches, int widthInches, int heightInches) {
+        int volumeBox = lengthInches*widthInches*heightInches;
+        if (volumeBox <= MAX_CUBIC_INCHES && acceptPackage((weightPounds))) {
+            return true;
+        }
         return false;
     }
 
@@ -61,6 +65,44 @@ public class Exercise05_AcceptPackage {
     acceptPackage(50, 36, 24, 12) ➔ false
      */
     public boolean acceptPackage(int weightPounds, int lengthInches, int widthInches, int heightInches, boolean isSurchargePaid) {
+
+        //Most restrictive condition is:
+        //awkward and surcharge paid, which should evaluate to true
+        //should only need isAwkward, and then can just use that and && with surcharge parameter
+        boolean isAwkward = (lengthInches >= 66 || widthInches >= 66 || heightInches >= 66);
+
+        //boolean for volume and weight up to this point
+        boolean isAcceptableWeightAndVolume = acceptPackage(weightPounds, lengthInches, widthInches, heightInches);
+
+        if (isAwkward && isSurchargePaid && isAcceptableWeightAndVolume) {
+            return true;
+        }
+
+        //catch rest of true conditions (weight and volume are good and package is not awkward)
+        else if(isAcceptableWeightAndVolume && !isAwkward) {
+            return true;
+        }
+
         return false;
+
+
+
+
+
+
+
+        //        boolean isAwkward = (lengthInches >= 66 || widthInches >= 66 || heightInches >= 66);
+//        boolean isAwkwardButOkay = false;
+//        if (isAwkward && isSurchargePaid) {
+//            isAwkwardButOkay = true;
+//        }
+//        if (acceptPackage(weightPounds, lengthInches, widthInches, heightInches) && (isAwkward && isAwkwardButOkay) ) {
+//            return true;
+//        }
+//
+//        if (acceptPackage(weightPounds, lengthInches, widthInches, heightInches)) {
+//            return true;
+//        }
+//        return false;
     }
 }

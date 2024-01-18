@@ -32,6 +32,9 @@ public class Exercise07_StoreHours {
     isStoreOpen(22) ➔ false
      */
     public boolean isStoreOpen(int currentHour) {
+        if (currentHour >= 8 && currentHour < 17) {
+            return true;
+        }
         return false;
     }
 
@@ -57,6 +60,10 @@ public class Exercise07_StoreHours {
     isStoreOpen(12, 'S') ➔ false
      */
     public boolean isStoreOpen(int currentHour, char currentDay) {
+        boolean isOpenDay = (currentDay == 'M' || currentDay == 'W' || currentDay == 'F');
+        if(isStoreOpen(currentHour) && isOpenDay) {
+            return true;
+        }
         return false;
     }
 
@@ -75,6 +82,46 @@ public class Exercise07_StoreHours {
     isStoreOpen(9, 'S', true) ➔ true
      */
     public boolean isStoreOpen(int currentHour, char currentDay, boolean isSummer) {
-        return false;
+        //new strategy. We need to determine new summer stuff first.
+        //we have isSummer, we need to know a new boolean isInExtendedHours
+        boolean isExtraSHours = (currentDay =='S' && (currentHour >=9 && currentHour <= 15));
+        boolean isExtraWHours = (currentDay == 'W' && currentHour >=17 && currentHour < 20);
+        boolean isExtendedHours = isExtraSHours || isExtraWHours;
+
+        if (isSummer && isExtendedHours) {
+            return true;
+//            if(isExtendedHours) {
+//                return true;
+//            }
+        }
+        return isStoreOpen(currentHour, currentDay);
+
+
+        //wow crazy how small you can get this solution down lmao. I really overthought this.
+
+
+
+
+
+
+
+
+
+
+//        //lets just eliminate previous false outputs so we don't have to think about those
+//        boolean isPreviousStoreOpen = isStoreOpen(currentHour, currentDay);
+//        if(!isPreviousStoreOpen) {
+//            return false;
+//        }
+//
+//        //okay now account for extra summer hours -
+//        //leave boolean false, and use logic to make it true
+//        boolean summerStoreOpen = false;
+//        if (isSummer && (currentDay == 'W' )) {
+//
+//        }
+//
+//
+//        return false;
     }
 }

@@ -6,8 +6,9 @@ public class Lecture {
     it so that it returns something other than a 1.
     */
     public int returnNotOne() {
-        return 1;
+        return 17;
     }
+
 
     /*
     2. This method is named returnNotHalf and it returns a double. Change
@@ -57,7 +58,7 @@ public class Lecture {
     */
     public boolean returnTrueWhenOneEqualsOne() {
         if (1 == 1) {
-            return false;
+            return true;
         }
 
         return false;
@@ -115,7 +116,7 @@ public class Lecture {
     12. Now write the above using the Ternary operator ?:. If you're not sure what this is, you can Google it.
     */
     public String returnFizzIfThreeUsingTernary(int number) {
-        return "";
+        return number == 3 ? "Fizz" : "";
     }
 
     /*
@@ -137,7 +138,7 @@ public class Lecture {
     }
 
     /*
-    15. Now, do it again with a different boolean opeation.
+    15. Now, do it again with a different boolean operation.
     */
     public String returnAdultOrMinorAgain(int number) {
         if (true) {
@@ -181,7 +182,28 @@ public class Lecture {
     public double returnPizzaCost(char size, int numberOfToppings) {
         // You can declare variables in methods. Declare a variable to hold the cost of the pizza.
         // Set its value based on the size. Then add the cost for the toppings and return the total cost
-        return 0.0;
+        double cost = 0.0;
+
+        if (size == 's') {
+            cost += SMALL;
+        }
+        else if (size == 'm') {
+            cost += MEDIUM;
+        }
+        else {
+            cost += LARGE;
+        }
+
+        //evaluate toppings
+
+        if (numberOfToppings > 3) {
+            cost += numberOfToppings*OVER_3_TOPPINGS;
+        } else {
+            cost += numberOfToppings*UNDER_3_TOPPINGS;
+        }
+
+        return cost;
     }
+
 
 }

@@ -6,6 +6,10 @@ public class Tutorial {
 
         // write your code here
 
+        int i;
+        for (i = 0; i <= 5; i++) {
+            System.out.println(i);
+        }
 
 
 

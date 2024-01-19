@@ -100,14 +100,6 @@ public class Exercise07_StoreHours {
         //wow crazy how small you can get this solution down lmao. I really overthought this.
 
 
-
-
-
-
-
-
-
-
 //        //lets just eliminate previous false outputs so we don't have to think about those
 //        boolean isPreviousStoreOpen = isStoreOpen(currentHour, currentDay);
 //        if(!isPreviousStoreOpen) {

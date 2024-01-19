@@ -73,6 +73,7 @@ public class Exercise03_ShippingTotal {
     public double calculateShippingTotal(int weightPounds, boolean hasDiscount) {
         double cost = calculateShippingTotal(weightPounds);
         if (hasDiscount) {
+
             return 0.9*cost;
         }
         return cost;

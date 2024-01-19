@@ -1,0 +1,30 @@
+09:02:43 From  Mike Rowan  to  Everyone:
+	The class portal is also pinned at the top of the java grey slack channel along with the zoom link
+09:03:11 From  Revathi  to  Everyone:
+	Reacted to "The class portal is ..." with 👍
+09:03:31 From  Quynh (Quinn) (she/her)  to  Everyone:
+	Reacted to "The class portal is ..." with 👍
+09:06:51 From  Quynh (Quinn) (she/her)  to  Everyone:
+	code smells? is that the term??? 😕
+09:07:05 From  Harry Simpson  to  Everyone:
+	Replying to "code smells? is that..."
+	
+	lol yeah i think so
+09:07:15 From  Quynh (Quinn) (she/her)  to  Everyone:
+	Replying to "code smells? is that..."
+	
+	urghhh
+09:10:51 From  Dustin Dobos  to  Everyone:
+	Replying to "code smells? is that..."
+	
+	method overloading
+09:13:42 From  Quynh (Quinn) (she/her)  to  Everyone:
+	Reacted to "method overloading" with ❤️
+10:37:03 From  Quynh (Quinn) (she/her)  to  Everyone:
+	am I missing something? are they not the same? to check if an array is null or if array length is 0?
+10:37:33 From  Harry Simpson  to  Everyone:
+	no i think thats a good question Quynh
+10:38:24 From  Quynh (Quinn) (she/her)  to  Everyone:
+	Reacted to "no i think thats a g..." with ❤️
+11:45:54 From  Kenny Green(He/Him)  to  Everyone:
+	I lost connection

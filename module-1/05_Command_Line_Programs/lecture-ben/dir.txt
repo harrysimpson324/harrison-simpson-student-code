@@ -1,0 +1,4 @@
+dir.txt
+pom.xml
+src/
+target/

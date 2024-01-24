@@ -1,0 +1,100 @@
+09:03:30 From  Harry Simpson  to  Everyone:
+	Reacted to "Good morning everyon..." with ❤️
+09:07:56 From  Harry Simpson  to  Everyone:
+	i thought the examples in the reading about that were very helpful for which collection would be used in what application - ie stacks for designing an undo feature and queues for managing any sort of line or queue, like maybe in a customer service application managing who is the first caller
+09:08:15 From  Dustin Dobos  to  Everyone:
+	Replying to "i thought the exampl..."
+	
+	agreed
+09:10:14 From  Quynh (Quinn) (she/her)  to  Everyone:
+	Reacted to "i thought the exampl..." with ❤️
+09:29:31 From  Karrington Gatlin  to  Everyone:
+	after ive git pulled i still dont have the lecture code.
+09:29:58 From  Larry "Devin" Carter  to  Everyone:
+	was you in the student dir when you puled?
+09:30:01 From  Harry Simpson  to  Everyone:
+	Replying to "after ive git pulled..."
+	
+	it worked for me, are you in your student repo?
+09:30:16 From  Karrington Gatlin  to  Everyone:
+	Replying to "after ive git pulled..."
+	
+	yeah i am
+09:30:33 From  Harry Simpson  to  Everyone:
+	Replying to "after ive git pulled..."
+	
+	and you did git pull upstream main?
+09:30:37 From  Quynh (Quinn) (she/her)  to  Everyone:
+	Replying to "was you in the stude..."
+	
+	you talked from experience? 😆
+09:30:49 From  Larry "Devin" Carter  to  Everyone:
+	Replying to "was you in the stude..."
+	
+	yes, from yesterday lol
+09:30:50 From  Harry Simpson  to  Everyone:
+	Reacted to "you talked from expe..." with 😂
+09:30:56 From  Quynh (Quinn) (she/her)  to  Everyone:
+	Reacted to "yes, from yesterday ..." with 😆
+09:30:56 From  Karrington Gatlin  to  Everyone:
+	Reacted to "you talked from expe..." with 😂
+09:31:00 From  Karrington Gatlin  to  Everyone:
+	Reacted to "yes, from yesterday ..." with 😆
+09:31:25 From  Harry Simpson  to  Everyone:
+	Replying to "after ive git pulled..."
+	
+	sorry just tryna cover the bases
+09:31:28 From  Larry "Devin" Carter  to  Everyone:
+	Reacted to "yes, from yesterday ..." with 😆
+09:31:35 From  Daniel To (He/Him)  to  Everyone:
+	Reacted to "you talked from expe..." with 😂
+09:31:41 From  Daniel To (He/Him)  to  Everyone:
+	Reacted to "yes, from yesterday ..." with 😆
+09:31:44 From  Karrington Gatlin  to  Everyone:
+	Replying to "after ive git pulled..."
+	
+	sorry i was doing git pull origin main
+09:31:48 From  Larry "Devin" Carter  to  Everyone:
+	Replying to "after ive git pulled..."
+	
+	did you push beforehand?
+09:32:05 From  Larry "Devin" Carter  to  Everyone:
+	Replying to "after ive git pulled..."
+	
+	if you have something unsaved it may not let you pull
+09:32:17 From  Harry Simpson  to  Everyone:
+	Replying to "after ive git pulled..."
+	
+	nice
+09:32:31 From  Quynh (Quinn) (she/her)  to  Everyone:
+	Reacted to "if you have somethin..." with ☝️
+09:32:31 From  Larry "Devin" Carter  to  Everyone:
+	Reacted to "sorry i was doing gi..." with 💪
+10:07:20 From  Larry "Devin" Carter  to  Everyone:
+	Removed a 😆 reaction from "yes, from yesterday ..."
+10:07:22 From  Larry "Devin" Carter  to  Everyone:
+	Reacted to "you talked from expe..." with 😂
+10:51:58 From  Harry Simpson  to  Everyone:
+	anyone know any HTML?
+10:52:31 From  Larry "Devin" Carter  to  Everyone:
+	Reacted to "anyone know any HTML..." with 🤷‍♂️
+10:52:35 From  Harry Simpson  to  Everyone:
+	Replying to "anyone know any HTML..."
+	
+	word me neitehr
+10:52:43 From  Enrique Cedeño (he/him)  to  Everyone:
+	Replying to "anyone know any HTML..."
+	
+	I do
+10:52:50 From  Alison Hall (she/her)  to  Everyone:
+	i took an intro coursera class a while ago but dont remember much
+10:53:00 From  Harry Simpson  to  Everyone:
+	Reacted to "I do" with 👍
+10:53:06 From  Quynh (Quinn) (she/her)  to  Everyone:
+	Replying to "anyone know any HTML..."
+	
+	un poco
+10:53:36 From  Quynh (Quinn) (she/her)  to  Everyone:
+	Reacted to "i took an intro cour..." with 😮
+10:53:41 From  Harry Simpson  to  Everyone:
+	Reacted to "i took an intro cour..." with 👍

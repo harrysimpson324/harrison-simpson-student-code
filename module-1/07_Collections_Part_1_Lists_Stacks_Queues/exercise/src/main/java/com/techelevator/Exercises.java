@@ -16,7 +16,11 @@ public class Exercises {
 	 array2List( {"Left", "Right", "Forward", "Back"} )  ->  ["Left", "Right", "Forward", "Back"]
 	 */
 	public List<String> array2List(String[] stringArray) {
-		return null;
+		List<String> stringList = new ArrayList<>();
+		for(String item : stringArray) {
+			stringList.add(item);
+		}
+		return stringList;
 	}
 
 	/*
@@ -26,7 +30,8 @@ public class Exercises {
 	 list2Array( ["Left", "Right", "Forward", "Back"] )  ->  {"Left", "Right", "Forward", "Back"}
 	 */
 	public String[] list2Array(List<String> stringList) {
-		return null;
+
+		return stringList.toArray(new String[0]);
 	}
 
 	/*
@@ -37,7 +42,13 @@ public class Exercises {
 	 no4LetterWords( {"Jack", "Jill", "Jane", "John", "Jim"} )  ->  ["Jim"]
 	 */
 	public List<String> no4LetterWords(String[] stringArray) {
-		return null;
+		List<String> returnList = new ArrayList<>();
+		for(String item : stringArray) {
+			if (item.length() != 4) {
+				returnList.add(item);
+			}
+		}
+		return returnList;
 	}
 
 	/*
@@ -47,7 +58,11 @@ public class Exercises {
 	 arrayInt2ListDouble( {84, 99, 3285, 13, 877} ) -> [42, 49.5, 1642.5, 6.5, 438.5]
 	 */
 	public List<Double> arrayInt2ListDouble(int[] intArray) {
-		return null;
+		List<Double> returnList = new ArrayList<>();
+		for(int num : intArray) {
+			returnList.add(num/2.0);
+		}
+		return returnList;
 	}
 
 	/*
@@ -57,7 +72,15 @@ public class Exercises {
 	 findLargest( [-2, -6, -8] ) -> -2
 	 */
 	public Integer findLargest(List<Integer> integerList) {
-		return null;
+		Integer largest = integerList.get(0);
+
+		for (Integer toTest : integerList) {
+			if (Integer.compare(toTest, largest) > 0) {
+				largest = toTest;
+			}
+		}
+
+		return largest;
 	}
 
 	/*
@@ -67,7 +90,16 @@ public class Exercises {
 	 oddOnly( {734, 233, 782, 811, 3, 9999} ) -> [233, 811, 3, 9999]
 	 */
 	public List<Integer> oddOnly(Integer[] integerArray) {
-		return null;
+
+		List<Integer> oddInts = new ArrayList<>();
+
+		for( Integer toTest : integerArray) {
+			if(toTest % 2 == 1 || toTest % 2 == -1) {
+				oddInts.add(toTest);
+			}
+		}
+
+		return oddInts;
 	}
 
 	/*
@@ -78,7 +110,26 @@ public class Exercises {
 	 foundIntTwice( [9, 9, 44, 2, 88, 9], 9) -> true
 	 */
 	public boolean foundIntTwice(List<Integer> integerList, int intToFind) {
-		return false;
+
+		int count = 0;
+		int index = 0;
+
+		while (count < 2) {
+			Integer tryGuy = intToFind;
+
+			if (integerList.contains(tryGuy)) {
+				integerList.remove(tryGuy);
+				count++;
+			}
+			index++;
+
+			if (index > integerList.size()) {
+				return false;
+			}
+		}
+
+
+		return true;
 	}
 
 	/*
@@ -91,10 +142,28 @@ public class Exercises {
 	fizzBuzzList( {4, 5, 6} )  ->  ["4", "Buzz", "Fizz"]
 	fizzBuzzList( {7, 8, 9, 10, 11, 12, 13, 14, 15} )  ->  ["7", "8", "Fizz", "Buzz", "11", "Fizz", "13", "14", "FizzBuzz"]
 
-	HINT: To convert an Integer x to a String, you can use x.toString() in your code. For example, if x = 1, then x.toString() returns "1."
+	HINT: To convert an Integer x to a String, you can use x.toString() in your code. For example, if x = 1, then x.toString() returns "1".
 	 */
 	public List<String> fizzBuzzList(Integer[] integerArray) {
-		return null;
+
+		List<String> returnList = new ArrayList<>();
+
+		for (Integer num : integerArray) {
+			if (num % 3 == 0 && num % 5 == 0) {
+				returnList.add("FizzBuzz");
+			}
+			else if (num % 3 == 0) {
+				returnList.add("Fizz");
+			}
+			else if(num % 5 == 0) {
+				returnList.add("Buzz");
+			}
+			else {
+				returnList.add(num.toString());
+			}
+		}
+
+		return returnList;
 	}
 
 	/*
@@ -107,7 +176,27 @@ public class Exercises {
      interleaveLists( [1, 2, 5, 8, 10], [4, 5, 6] )  ->  [1, 4, 2, 5, 5, 6, 8, 10]
 	 */
 	public List<Integer> interleaveLists(List<Integer> listOne, List<Integer> listTwo) {
-		return null;
+		boolean isListOneBigger = listOne.size() > listTwo.size();
+
+		List<Integer> combinedList = new ArrayList<>();
+
+		//using indexed for loop, i will go up to
+		for (int i = 0; i < (isListOneBigger ? listOne.size() : listTwo.size()); i++) {
+			//address condition: we are off the end of smaller list two
+			if (isListOneBigger && i >= listTwo.size()) {
+				combinedList.add(listOne.get(i));
+			}
+			//address condition: we are off the end of smaller list one
+			else if (!isListOneBigger && i >= listOne.size()) {
+				combinedList.add(listTwo.get(i));
+			}
+			//all other conditions: add list one then add list two
+			else {
+				combinedList.add(listOne.get(i));
+				combinedList.add(listTwo.get(i));
+			}
+		}
+		return combinedList;
 	}
 
 }

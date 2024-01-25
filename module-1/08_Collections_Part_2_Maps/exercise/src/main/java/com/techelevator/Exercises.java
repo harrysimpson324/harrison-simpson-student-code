@@ -34,7 +34,37 @@ public class Exercises {
 	 *
 	 */
 	public String animalGroupName(String animalName) {
-		return null;
+
+
+		//if you test null string first in an OR condition, it evaluates to true before it has to read the string
+		//length and throws an exception!
+
+		if(animalName == null || animalName.length() == 0) {
+			return "unknown";
+		}
+
+		Map<String, String> animals = new HashMap<>();
+
+		animals.put("Rhino", "Crash");
+		animals.put("Giraffe", "Tower");
+		animals.put("Elephant", "Herd");
+		animals.put("Lion", "Pride");
+		animals.put("Crow", "Murder");
+		animals.put("Pigeon", "Kit");
+		animals.put("Flamingo", "Pat");
+		animals.put("Deer", "Herd");
+		animals.put("Dog", "Pack");
+		animals.put("Crocodile", "Float");
+
+		// format input for proper lookup :( (couldn't find method strategy so i brute force i guess)
+
+		String lookup = animalName.toLowerCase();
+		lookup = lookup.substring(0,1).toUpperCase() + lookup.substring(1);
+
+		if (animals.containsKey(lookup)) {
+			return animals.get(lookup);
+		}
+		return "unknown";
 	}
 
 	/*
@@ -60,7 +90,24 @@ public class Exercises {
 	 *
 	 */
 	public double isItOnSale(String itemNumber) {
-		return -1.0;
+
+		if (itemNumber == null || itemNumber.length() == 0) {
+			return 0.00;
+		}
+
+		Map<String, Double> discount = new HashMap<>();
+		discount.put("KITCHEN4001", 0.20);
+		discount.put("GARAGE1070", 0.15);
+		discount.put("kitchen6073".toUpperCase(), 0.40);
+		discount.put("LIVINGROOM", 0.10);
+		discount.put("BEDROOM3434", 0.60);
+		discount.put("BATH0073", 0.15);
+
+		if (discount.containsKey(itemNumber.toUpperCase())) {
+			return discount.get(itemNumber.toUpperCase());
+		}
+
+		return 0.0;
 	}
 
 	/*
@@ -76,7 +123,19 @@ public class Exercises {
 	 *
 	 */
 	public Map<String, Integer> robPeterToPayPaul(Map<String, Integer> peterPaul) {
-		return null;
+		Integer peter = peterPaul.get("Peter");
+		Integer paul = peterPaul.get("Paul");
+
+		if (paul < 1000 && peter > 0) {
+			//rounding down twice error due to integer division eliminates 1 cent if the input for peter is odd,
+			//so i used the difference variable to solve that issue by only dividing once.
+			int difference = peter/2;
+			paul += difference;
+			peter -= difference;
+		}
+		peterPaul.put("Peter", peter);
+		peterPaul.put("Paul", paul);
+		return peterPaul;
 	}
 
 	/*
@@ -89,7 +148,20 @@ public class Exercises {
 	 *
 	 */
 	public Map<String, Integer> peterPaulPartnership(Map<String, Integer> peterPaul) {
-		return null;
+
+		if (peterPaul.get("Peter") >= 5000 && peterPaul.get("Paul") >= 10000) {
+			int peterCont = peterPaul.get("Peter")/4;
+			int paulCont = peterPaul.get("Paul")/4;
+
+			peterPaul.put("Peter", peterPaul.get("Peter") - peterCont);
+			peterPaul.put("Paul", peterPaul.get("Paul") - paulCont);
+			peterPaul.put("PeterPaulPartnership", peterCont+paulCont);
+		}
+		return peterPaul;
+
+		//huge fan of how nicely these Wrapper classes interact with their respective primitives. I feel like i wasn't
+		//careful with them at all and also I didn't need to be. Definitely want to remain aware of wrappers but I will start
+		//just ignoring them completely to test the limits of what I can get away with.
 	}
 
 	/*
@@ -104,7 +176,12 @@ public class Exercises {
 	 * beginningAndEnding(["muddy", "good", "moat", "good", "night"]) → {"g": "d", "m": "t", "n": "t"}
 	 */
 	public Map<String, String> beginningAndEnding(String[] words) {
-		return null;
+
+		Map<String, String> chars = new HashMap<>();
+		for (String word : words) {
+			chars.put(word.substring(0,1), word.substring(word.length()-1));
+		}
+		return chars;
 	}
 
 	/*
@@ -120,7 +197,18 @@ public class Exercises {
 	 *
 	 */
 	public Map<String, Integer> wordCount(String[] words) {
-		return null;
+
+		Map<String, Integer> count = new HashMap<>();
+
+		for (String word : words) {
+			if (count.containsKey(word)) {
+				count.put(word, count.get(word)+1);
+			}
+			else {
+				count.put(word, 1);
+			}
+		}
+		return count;
 	}
 
 	/*
@@ -135,7 +223,18 @@ public class Exercises {
 	 *
 	 */
 	public Map<Integer, Integer> integerCount(int[] ints) {
-		return null;
+		Map<Integer, Integer> intCount = new HashMap<>();
+
+		for (Integer num : ints) {
+			if (intCount.containsKey(num)) {
+				intCount.put(num, intCount.get(num)+1);
+			}
+			else {
+				intCount.put(num, 1);
+			}
+
+		}
+		return intCount;
 	}
 
 	/*
@@ -148,7 +247,18 @@ public class Exercises {
 	 *
 	 */
 	public Map<String, Boolean> wordMultiple(String[] words) {
-		return null;
+		Map<String, Boolean> trueIfTwo = new HashMap<>();
+
+		for (String word : words) {
+			if (trueIfTwo.containsKey(word)) {
+				trueIfTwo.put(word, true);
+			}
+			else {
+				trueIfTwo.put(word, false);
+			}
+
+		}
+		return trueIfTwo;
 	}
 
 	/*
@@ -163,7 +273,19 @@ public class Exercises {
 	 */
 	public Map<String, Integer> consolidateInventory(Map<String, Integer> mainWarehouse,
 			Map<String, Integer> remoteWarehouse) {
-		return null;
+
+		Map<String, Integer> both = mainWarehouse;
+
+		for (String remoteKey : remoteWarehouse.keySet()) {
+			if (both.containsKey(remoteKey)) {
+				both.put(remoteKey, mainWarehouse.get(remoteKey) + remoteWarehouse.get(remoteKey));
+			}
+			else {
+				both.put(remoteKey, remoteWarehouse.get(remoteKey));
+			}
+		}
+
+		return both;
 	}
 
 	/*
@@ -182,7 +304,27 @@ public class Exercises {
 	 *
 	 */
 	public Map<String, Integer> last2Revisited(String[] words) {
-		return null;
+
+		Map<String,Integer> lastTwoCount = new HashMap<>();
+
+		for(String word : words) {
+			if (word.length() < 2) {
+				lastTwoCount.put(word, 0);
+			}
+			String lastTwo = word.substring(word.length() - 2);
+			Integer count = 0;
+			//set up word counter to check position 3rd to last
+			for (int i = 0; i < word.length() - 2; i++) {
+				if (word.substring(i, i+2).equals(lastTwo)) {
+					count++;
+				}
+			}
+			lastTwoCount.put(word, count);
+		}
+
+
+
+		return lastTwoCount;
 	}
 
 }

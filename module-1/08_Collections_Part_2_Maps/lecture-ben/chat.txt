@@ -1,0 +1,74 @@
+09:44:13 From  Quynh (Quinn) (she/her)  to  Everyone:
+	Has anyone worked on the tutorials? I have not touched one since the bootcamp start. Just wondering how hard/easy they are.
+09:44:55 From  Harry Simpson  to  Everyone:
+	Replying to "Has anyone worked on..."
+	
+	they are very easy, you basically just copy and paste code from the readme file and it walks you through what a piece of code would look like
+09:45:09 From  Larry "Devin" Carter  to  Everyone:
+	Easy. They are not actual work. They just walk you through the use of what we covered.
+09:45:10 From  Harry Simpson  to  Everyone:
+	Replying to "Has anyone worked on..."
+	
+	i haven't done the last 3 or so
+09:45:18 From  Quynh (Quinn) (she/her)  to  Everyone:
+	Reacted to "they are very easy, ..." with ❤️
+09:45:23 From  Quynh (Quinn) (she/her)  to  Everyone:
+	Reacted to "Easy. They are not a..." with ❤️
+09:46:16 From  Mike Rowan  to  Everyone:
+	Replying to "Has anyone worked on..."
+	
+	It's a nice boost of confidence since the code always works
+09:46:27 From  Quynh (Quinn) (she/her)  to  Everyone:
+	Reacted to "It's a nice boost of..." with 😆
+09:46:31 From  Larry "Devin" Carter  to  Everyone:
+	Reacted to "It's a nice boost of..." with 😆
+09:46:40 From  Quynh (Quinn) (she/her)  to  Everyone:
+	Replying to "Has anyone worked on..."
+	
+	lol, I need that boost of confidence
+09:48:01 From  Kenny Green  to  Ben Langhinrichs (he/him)(Direct Message):
+	I forgot I had a doctors appointment and an MRI. I’m on my way there now.
+09:52:42 From  Revathi  to  Everyone:
+	is anyone's screen glitching?
+09:53:07 From  Quynh (Quinn) (she/her)  to  Everyone:
+	Replying to "is anyone's screen g..."
+	
+	no....
+09:53:13 From  Alison Hall (she/her)  to  Everyone:
+	no mine is good
+09:53:33 From  Revathi  to  Everyone:
+	ok, thanks. i think its just mine
+09:53:55 From  Harry Simpson  to  Everyone:
+	Replying to "ok, thanks. i think ..."
+	
+	if you haven't restarted your laptop in a while that might help!
+09:54:35 From  Revathi  to  Everyone:
+	ok. thanks for reminding. i will that after class
+09:54:44 From  Revathi  to  Everyone:
+	Reacted to "if you haven't resta..." with 👍
+09:54:45 From  Harry Simpson  to  Everyone:
+	Reacted to "ok. thanks for remin..." with 👍
+10:04:07 From  Karrington Gatlin  to  Everyone:
+	is anyone else getting "Cannot resolve symbol print"
+10:04:27 From  Karrington Gatlin  to  Everyone:
+	sorry i mean symbol put
+10:05:10 From  Harry Simpson  to  Everyone:
+	are you using the dot (.) operator after your variable name
+10:05:19 From  Karrington Gatlin  to  Everyone:
+	yes
+10:05:20 From  Umer Abubeker  to  Everyone:
+	@Karrington Gatlin check the syntax
+10:05:28 From  Karrington Gatlin  to  Everyone:
+	okay
+10:05:31 From  Harry Simpson  to  Everyone:
+	if so you might need to import HashMap and map
+10:05:43 From  Karrington Gatlin  to  Everyone:
+	that might be it
+10:06:05 From  Alison Hall (she/her)  to  Everyone:
+	or could be a variable name has a typo
+10:06:20 From  Harry Simpson  to  Everyone:
+	Reacted to "or could be a variab..." with 👍
+10:06:31 From  Harry Simpson  to  Everyone:
+	Reacted to "or could be a variab..." with 🧠
+10:06:35 From  Karrington Gatlin  to  Everyone:
+	yeah a hashmap is already imported, ill check for typos

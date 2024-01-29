@@ -5,9 +5,7 @@ public class Elevator {
     //properties
 
     private int currentFloor;
-
     private int numberOfFloors;
-
     private boolean doorOpen;
 
     //constructors
@@ -51,6 +49,7 @@ public class Elevator {
         if (!doorOpen && desiredFloor >= 1  && desiredFloor < currentFloor) {
             currentFloor = desiredFloor;
         }
+
     }
 
 }

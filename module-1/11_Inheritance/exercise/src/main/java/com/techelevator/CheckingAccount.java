@@ -19,18 +19,16 @@ public class CheckingAccount extends BankAccount {
         final int OVERDRAFT_FEE = 10;
         int diff = getBalance() - amountToWithdraw;
         if (diff < 0 && diff > -100) {
-            super.withdraw(amountToWithdraw + OVERDRAFT_FEE);
+            return super.withdraw(amountToWithdraw + OVERDRAFT_FEE);
         }
         else if (diff <= -100) {
             return getBalance();
         }
 
         else {
-            super.withdraw(amountToWithdraw);
+            return super.withdraw(amountToWithdraw);
         }
 
-
-        return getBalance();
     }
 
 

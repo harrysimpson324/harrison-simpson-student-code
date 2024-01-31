@@ -1,12 +1,19 @@
 package com.techelevator;
 
+import java.math.BigDecimal;
+
 public class CheckingAccount extends BankAccount {
+
+
 
     public static final int MINIMUM_BALANCE = -100;
     public static final int OVERDRAFT_FEE = 10;
 
     public CheckingAccount(String accountHolder, String accountNumber, int balance) {
         super(accountHolder, accountNumber, balance);
+        BigDecimal haha = new BigDecimal(0);
+
+        haha.compareTo(new BigDecimal("1"));
     }
 
     public CheckingAccount(String accountHolder, String accountNumber) {

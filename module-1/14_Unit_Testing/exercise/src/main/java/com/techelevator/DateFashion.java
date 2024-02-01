@@ -1,5 +1,6 @@
 package com.techelevator;
 
+
 public class DateFashion {
 
     /*
@@ -11,8 +12,16 @@ public class DateFashion {
     getATable(5, 10) → 2
     getATable(5, 2) → 0
     getATable(5, 5) → 1
+
+    If the range inputted is out of the range, the program should return -1 to indicate a failure.
+
     */
     public int getATable(int you, int date) {
+
+        if (you > 10 || you < 0 || date > 10 || date < 0) {
+            return -1;
+        }
+
         int getTable = 1;
 
         if (you <= 2 || date <= 2) {

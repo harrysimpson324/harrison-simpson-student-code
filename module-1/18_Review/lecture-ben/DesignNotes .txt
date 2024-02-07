@@ -1,0 +1,55 @@
+1) Understanding overriding parent methods in children/grandchildren
+
+2) Polymorphism with examples
+
+3) When to use stacks and queues
+
+4) Real world process of creating software. README? What?
+
+--------------------------------------------------------------------
+
+Animal shelter or bowling alley or restaurant or casino or [Denny's at 3am]
+
+
+Selling insurance or ordering food (timing of service) or animal wanting to be adopted or [server selling insurance as side hustle]
+
+We are a server at Denny selling insurance as a side hustle because the tips suck. It is 3am, and we need to avoid getting caught by management.
+
+---------------------------------------------------------------------------------------------
+
+Me 
+
+Employee
+  boughtInsurance (boolean)
+  easyTarget (int) 
+  potentialNarcs (int)
+
+Boss (arch villain)
+
+Event
+
+Insurance
+
+Restaurant
+
+Customer (class)
+  Location / Table (Class)
+  Food (array of string)
+  boughtInsurance (boolean)
+  easyTarget (int) 
+
+Food (String)
+
+--------------------------------------------------
+
+look
+//approach 
+pitch (trying to sell insurance)
+deliver (food)
+dodge (either the boss or fellow employees)
+hide (take a break from the game)
+ask (asking what food they want)
+
+deliver #2 biscuts and gravy
+
+

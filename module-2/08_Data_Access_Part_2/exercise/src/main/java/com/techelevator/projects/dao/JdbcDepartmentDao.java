@@ -24,27 +24,39 @@ public class JdbcDepartmentDao implements DepartmentDao {
 	}
 
 	@Override
-	public Department getDepartmentById(int id) {
+	public Department getDepartmentById(int id) throws DaoException {
 		Department department = null;
 		String sql = DEPARTMENT_SELECT +
 				" WHERE d.department_id=?";
 
-		SqlRowSet results = jdbcTemplate.queryForRowSet(sql, id);
-		if (results.next()) {
-			department = mapRowToDepartment(results);
+		try {
+			SqlRowSet results = jdbcTemplate.queryForRowSet(sql, id);
+			if (results.next()) {
+				department = mapRowToDepartment(results);
+			}
+		} catch (CannotGetJdbcConnectionException e) {
+			throw new DaoException("Error connecting to server/database with jdbcTemplate (CannotGetJdbcConnectionException)", e);
+		} catch (DataIntegrityViolationException e) {
+			throw new DaoException("Error with primary keys/foreign keys (DataIntegrityViolationException)", e);
 		}
 
 		return department;
 	}
 
 	@Override
-	public List<Department> getDepartments() {
+	public List<Department> getDepartments() throws DaoException {
 		List<Department> departments = new ArrayList<>();
 		String sql = DEPARTMENT_SELECT;
 
-		SqlRowSet results = jdbcTemplate.queryForRowSet(sql);
-		while (results.next()) {
-			departments.add(mapRowToDepartment(results));
+		try {
+			SqlRowSet results = jdbcTemplate.queryForRowSet(sql);
+			while (results.next()) {
+				departments.add(mapRowToDepartment(results));
+			}
+		} catch (CannotGetJdbcConnectionException e) {
+			throw new DaoException("Error connecting to server/database with jdbcTemplate (CannotGetJdbcConnectionException)", e);
+		} catch (DataIntegrityViolationException e) {
+			throw new DaoException("Error with primary keys/foreign keys (DataIntegrityViolationException)", e);
 		}
 		
 		return departments;
@@ -52,17 +64,61 @@ public class JdbcDepartmentDao implements DepartmentDao {
 
 	@Override
 	public Department createDepartment(Department department) {
-		throw new DaoException("createDepartment() not implemented");
+		String sql = "INSERT INTO department (name) " +
+				"VALUES(?) RETURNING department_id";
+		int newId = 0;
+
+		try {
+			newId = jdbcTemplate.queryForObject(sql, int.class, department.getName());
+		} catch (CannotGetJdbcConnectionException e) {
+			throw new DaoException("Error connecting to server/database with jdbcTemplate (CannotGetJdbcConnectionException)", e);
+		} catch (DataIntegrityViolationException e) {
+			throw new DaoException("Error with primary keys/foreign keys (DataIntegrityViolationException)", e);
+		}
+		department.setId(newId);
+		return department;
 	}
 
 	@Override
 	public Department updateDepartment(Department department) {
-		throw new DaoException("updateDepartment() not implemented");
+		String sql = "UPDATE department SET name = ? WHERE department_id = ? RETURNING ";
+		int id;
+		String name;
+		try {
+
+			id = jdbcTemplate.queryForObject(sql + "department_id;", int.class, department.getName(), department.getId());
+			name = jdbcTemplate.queryForObject("SELECT name FROM department WHERE department_id = ?;", String.class, id);
+
+		} catch (CannotGetJdbcConnectionException e) {
+			throw new DaoException("Error connecting to server/database with jdbcTemplate (CannotGetJdbcConnectionException)", e);
+		} catch (DataIntegrityViolationException e) {
+			throw new DaoException("Error with primary keys/foreign keys (DataIntegrityViolationException)", e);
+		}
+		return new Department(id, name);
+
+
+
 	}
 
 	@Override
 	public int deleteDepartmentById(int id) {
-		throw new DaoException("updateDepartment() not implemented");
+		int numRows = 0;
+		String sqlDepartment = "DELETE FROM department WHERE department_id = ?;";
+		String sqlEmployee = "UPDATE employee SET department_id = 0 " +
+				"WHERE department_id = ?;";
+
+		try {
+			jdbcTemplate.update(sqlEmployee, id);
+			numRows = jdbcTemplate.update(sqlDepartment, id);
+
+		} catch (CannotGetJdbcConnectionException e) {
+			throw new DaoException("Error connecting to server/database with jdbcTemplate (CannotGetJdbcConnectionException)", e);
+		} catch (DataIntegrityViolationException e) {
+			throw new DaoException("Error with primary keys/foreign keys (DataIntegrityViolationException)", e);
+		}
+
+		return numRows;
+
 	}
 
 	private Department mapRowToDepartment(SqlRowSet results) {

@@ -1,43 +1,61 @@
 Bug 1
 -----
 Test that demonstrates problem:
+getTimesheetsByEmployeeId_with_valid_employee_id_returns_list_of_timesheets_for_employee()
+in this method I assert that the method returns the correct number of timesheets by using assertEquals()
 
 Expected output:
+should be 3
 
 Actual output:
+1
 
 How did you fix this bug?
-
+Found that there was an if statement rather than a while loop in the method
 
 Bug 2
 -----
 Test that demonstrates problem:
+in the getTimesheetsByProjectID with valid id test method:
+Asserting that the method should return a list of size 3 and only getting a list of size 2
 
 Expected output:
-
+3
 Actual output:
-
+2
 How did you fix this bug?
-
+in the SQL query, in the WHERE clause, it still had employee_id in the search field.
 
 Bug 3
 -----
 Test that demonstrates problem:
+updateTimesheet_updates_timesheet() method
+assertTimesheetsMatch(updated, checkDatabase);
+assertTimesheetsMatch(toUpdate, checkDatabase);
+These fail because 'updated' is my holder for the method, toUpdate is what I pass into the method,
+and both of those should match the database entry.
 
 Expected output:
+Billable should be true in all timesheets
 
 Actual output:
+billable was still false in the database
 
 How did you fix this bug?
+Added a billable assignment to the SQL query.
 
 
 Bug 4
 -----
 Test that demonstrates problem:
+Assert.assertEquals("Method does not return correct value when isBillable = false", 0, time22, 0.001);
 
 Expected output:
+0
 
 Actual output:
+2.0
 
 How did you fix this bug?
+Added "AND billable = true;" to the end of the SQL query.
 

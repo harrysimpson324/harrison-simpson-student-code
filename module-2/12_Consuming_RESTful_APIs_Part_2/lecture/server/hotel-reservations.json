@@ -137,6 +137,14 @@
       "checkinDate": "2024-04-15",
       "checkoutDate": "2024-04-21",
       "guests": 4
+    },
+    {
+      "id": 707,
+      "hotelId": 1,
+      "fullName": "Harry Simpson",
+      "checkinDate": "9/24/2024",
+      "checkoutDate": "10/1/2024",
+      "guests": 2
     }
   ]
 }

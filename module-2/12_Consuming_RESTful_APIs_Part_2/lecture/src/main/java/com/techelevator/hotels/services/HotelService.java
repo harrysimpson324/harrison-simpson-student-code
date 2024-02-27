@@ -3,6 +3,9 @@ package com.techelevator.hotels.services;
 import com.techelevator.hotels.model.Hotel;
 import com.techelevator.hotels.model.Reservation;
 import com.techelevator.util.BasicLogger;
+import org.springframework.http.HttpEntity;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.MediaType;
 import org.springframework.web.client.ResourceAccessException;
 import org.springframework.web.client.RestClientResponseException;
 import org.springframework.web.client.RestTemplate;
@@ -18,7 +21,16 @@ public class HotelService {
      */
     public Reservation addReservation(Reservation newReservation) {
         // TODO: Implement method
-        return null;
+        Reservation reservation = null;
+        HttpHeaders header = new HttpHeaders();
+        header.setContentType(MediaType.APPLICATION_JSON);
+
+        HttpEntity<Reservation> entity = new HttpEntity<>(newReservation, header);
+
+        reservation = restTemplate.postForObject(API_BASE_URL + "/reservations", entity, Reservation.class);
+
+
+        return reservation;
     }
 
     /**
@@ -35,7 +47,20 @@ public class HotelService {
      */
     public boolean deleteReservation(int id) {
         // TODO: Implement method
-        return false;
+        //localhost:3000/reservations/
+        boolean hasWorked = false;
+
+
+        try {
+
+
+
+        } catch (RestClientResponseException e) {
+
+        } catch (ResourceAccessException e) {
+
+        }
+        return hasWorked;
     }
 
     /* DON'T MODIFY ANY METHODS BELOW */

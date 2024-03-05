@@ -1,0 +1,108 @@
+09:07:05 From Karrington Gatlin to Everyone:
+	good morning yall!
+09:07:15 From Joon Slocum to Everyone:
+	Reacted to "good morning yall!" with ❤️
+09:07:19 From Harry Simpson to Everyone:
+	morning!
+09:07:28 From Karrington Gatlin to Everyone:
+	Reacted to "morning!" with ❤️
+09:09:31 From Dustin Dobos to Everyone:
+	Reacted to "good morning yall!" with ❤️
+09:36:57 From Harry Simpson to Everyone:
+	cards offered to the user (ie cards with just a picture and a fact) aren't saved to the database until the user adds a caption and hits the save to collection
+09:37:27 From Quynh (Quinn) (she/her) to Everyone:
+	Reacted to "cards offered to the..." with ❤️
+09:37:47 From Joon Slocum to Everyone:
+	Replying to "cards offered to the..."
+	
+	We made it so it saved when pressed saved to collection even if it didn't have a caption was that no the right way?
+09:42:08 From Harry Simpson to Everyone:
+	Replying to "cards offered to the..."
+	
+	I dunno if the readMe was super clear on that
+09:42:12 From Harry Simpson to Everyone:
+	Replying to "cards offered to the..."
+	
+	dont remember
+09:42:20 From Harry Simpson to Everyone:
+	Replying to "cards offered to the..."
+	
+	i think we didn't let it save unless it was captioned
+09:42:26 From Harry Simpson to Everyone:
+	Replying to "cards offered to the..."
+	
+	but I might be wrong
+09:43:27 From Joon Slocum to Everyone:
+	Replying to "cards offered to the..."
+	
+	it did have a notEmpty thing but we kinda ignored that by not putting @Valid for the save method but that was prob wrong
+09:45:03 From Harry Simpson to Everyone:
+	Replying to "cards offered to the..."
+	
+	idk about wrong but yeah now that you say that I think they also added some front end stuff for when captions weren't added, like if you try to save with no caption the catcard website/client/whatever says, "must have caption to save" or something like that
+09:45:29 From Joon Slocum to Everyone:
+	Replying to "cards offered to the..."
+	
+	ye honestly if it works it works ig lol
+09:45:38 From Harry Simpson to Everyone:
+	Reacted to "ye honestly if it wo..." with 🧠
+09:45:57 From Alison Hall to Everyone:
+	Replying to "cards offered to the..."
+	
+	I think we saved the card even without the caption as well but just included an empty string "" in the method so that it would work
+09:46:12 From Harry Simpson to Everyone:
+	Reacted to "I think we saved the..." with 👍
+09:46:15 From Harry Simpson to Everyone:
+	Replying to "cards offered to the..."
+	
+	Nice!
+09:46:22 From Joon Slocum to Everyone:
+	Reacted to "I think we saved the..." with 👍
+09:46:43 From Alison Hall to Everyone:
+	Reacted to "ye honestly if it wo..." with 👏
+11:22:53 From Michael Rowan to Everyone:
+	his volume must be down
+11:22:53 From Larry "Devin" Carter to Everyone:
+	Ben, you can't hear anyone.
+11:23:17 From Dustin Dobos to Everyone:
+	tWiLiGhT zOnE
+11:23:21 From Michael Rowan to Everyone:
+	Reacted to "tWiLiGhT zOnE" with 😂
+11:23:26 From Daniel To (He/Him) to Everyone:
+	Reacted to "tWiLiGhT zOnE" with 😂
+11:23:26 From Larry "Devin" Carter to Everyone:
+	do do do do do
+11:23:30 From Larry "Devin" Carter to Everyone:
+	Reacted to "tWiLiGhT zOnE" with 😂
+11:23:32 From Bill Greenrod to Everyone:
+	Reacted to "tWiLiGhT zOnE" with 😂
+11:23:45 From Michael Rowan to Everyone:
+	can you hear me now?
+11:24:54 From Karrington Gatlin to Everyone:
+	Reacted to "his volume must be d..." with 😂
+11:25:04 From Karrington Gatlin to Everyone:
+	Reacted to "tWiLiGhT zOnE" with 😂
+11:25:08 From Quynh (Quinn) (she/her) to Everyone:
+	Reacted to "can you hear me now?" with 😆
+11:25:09 From Quynh (Quinn) (she/her) to Everyone:
+	Reacted to "tWiLiGhT zOnE" with 😂
+11:25:14 From Dustin Dobos to Everyone:
+	Reacted to "can you hear me now?" with 😆
+11:25:20 From Quynh (Quinn) (she/her) to Everyone:
+	@Alison Hall thanks for trying too!
+11:25:59 From Alison Hall to Everyone:
+	Reacted to "@Alison Hall thanks ..." with ❤️
+11:28:50 From Larry "Devin" Carter to Everyone:
+	I have an A/c repair guy coming to the house. If he getting here before class is over I'll need to step away. If there are any announcements at the end of class, can someone summarize them for me?
+11:29:04 From Harry Simpson to Everyone:
+	Replying to "I have an A/c repair..."
+	
+	yeah i got you
+11:29:15 From Larry "Devin" Carter to Everyone:
+	Reacted to "yeah i got you" with 👍
+11:29:25 From Larry "Devin" Carter to Everyone:
+	Replying to "I have an A/c repair..."
+	
+	@Harry Simpson awesome, thank man.
+11:29:33 From Harry Simpson to Everyone:
+	Reacted to "@Harry Simpson aweso..." with 👍

@@ -6,6 +6,7 @@ import java.util.List;
 
 public interface MovieDao {
     public List<Movie> getMovies();
+    public Movie getMovieById(int id);
 
     public String getMovieTitle(int id);
 }

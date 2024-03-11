@@ -47,8 +47,21 @@ public class MovieController {
         return tickets;
     }
 
+    @RequestMapping( path = "/movies/{id}", method = RequestMethod.GET)
+    public Movie getMovieById(@PathVariable int id) {
+        Movie movie = null;
+
+        try {
+            movie = movieDao.getMovieById(id);
+        }
+        catch (DaoException e) {
+            throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Unable to get movie title");
+        }
+
+        return movie;
+    }
     @RequestMapping( path = "/movies/{id}/title", method = RequestMethod.GET)
-    public String getMovieById(@PathVariable int id) {
+    public String getMovieTitleById(@PathVariable int id) {
         String title = "";
 
         try {

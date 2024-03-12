@@ -1,0 +1,39 @@
+body {
+    font-family: 'Noto Sans', sans-serif;
+    background-color: rgb(245, 212, 163);
+}
+.top-of-page {
+    text-align: center;
+
+}
+
+h1 {
+    border-bottom: 2px solid black;
+}
+
+
+img {
+    display: block;
+    width: 400px;
+    border: 2px dotted black;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+body h2 {
+    text-decoration: underline;
+}
+
+#quotes-section blockquote {
+    font-style: italic;
+}
+
+table {
+    text-align: center;
+    margin: auto;
+}
+
+#date {
+    column-width: 200px;
+}

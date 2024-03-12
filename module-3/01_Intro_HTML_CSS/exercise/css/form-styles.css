@@ -1,0 +1,10 @@
+body {
+    color: white;    
+}
+
+
+form {
+    line-height: 2;
+    background-color: brown;
+    width: fit-content;
+}

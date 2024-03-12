@@ -26,6 +26,7 @@ public class MovieService {
         HttpHeaders headers = new HttpHeaders();
         headers.setBearerAuth(authToken);
         HttpEntity<Void> entity = new HttpEntity<>(headers);
+
         try {
             ResponseEntity<Ticket[]> response =
                     restTemplate.exchange(baseUrl + "/tickets",

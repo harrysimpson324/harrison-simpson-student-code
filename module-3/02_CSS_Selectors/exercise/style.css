@@ -1,6 +1,8 @@
 * {
   box-sizing: border-box;
   font-family: Tahoma, Verdana, Segoe, sans-serif;
+  margin: 0;
+  margin-top: 5px;
 }
 
 html {
@@ -15,7 +17,88 @@ img {
   display: block;
 }
 
-ul {
+
+
+aside {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  border-right: 1px solid rgba(0, 173, 238, 0.4);
+  height: 100%;
+  margin: auto;
+  margin-top: 5px;
+}
+
+aside img {
+  height: 120px;
+  margin: auto;
+}
+
+nav ul li {
+  text-transform: uppercase;
+  text-align: center;
+  margin: auto;
+  border-bottom: 1px solid rgba(0, 173, 238, 0.4);
+  width: 80%;
+  list-style: none;
+  padding: 0.8rem;
+}
+
+aside nav ul {
+  padding: 0;
+  margin: 0;
+}
+
+aside nav ul li {
+  margin: auto;
+}
+
+nav ul li a {
+  font-weight: bold;
+  color: #00ADEE;
+  text-decoration: none;
+}
+
+nav ul > li:first-child {
+  text-decoration: underline #00ADEE;
+}
+
+main {
   margin: 0;
   padding: 0;
+  margin-left: 200px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+main header img{
+  margin: 0;
+  padding: 0;
+  height: 100px;
+  padding-bottom: 1rem;
+}
+
+main div#placeholder img{
+  display: block;
+  width: 60vw;
+}
+
+main section div {
+  display: inline-block;
+  width: 33%;
+  padding: 10px;
+}
+
+main section div h2 {
+  color: #8CC36F;
+}
+
+main section div i {
+  padding: 10px;
+}
+
+main section div:not(:last-child) {
+  border-right: 1px solid rgba(170, 239, 135, 0.8);
+  
 }

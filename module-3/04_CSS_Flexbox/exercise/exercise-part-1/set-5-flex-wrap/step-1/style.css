@@ -9,6 +9,7 @@ body {
   width: 350px;
   padding: 20px;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .box {
@@ -18,4 +19,5 @@ body {
   color: #fff;
   text-align: center;
   border: solid 1px #777;
+
 }

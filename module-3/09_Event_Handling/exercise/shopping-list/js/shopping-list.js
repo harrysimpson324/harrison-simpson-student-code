@@ -36,3 +36,105 @@ function displayGroceries() {
     ul.appendChild(li);
   });
 }
+
+function addLiDoubleClickListeners() {
+  const lis = document.querySelectorAll('li');
+
+  console.log('inside adding double click listeners');
+
+  lis.forEach( (element) => {
+
+    console.log('inside forEach loop');
+
+    element.addEventListener('dblclick', (event) => {
+
+      console.log('inside anon funct to perform doubleclick logic');
+
+      if (element.classList.contains('completed')) {
+
+        console.log('inside dblclick conditional');
+
+        element.classList.remove('completed');
+        const icon = element.firstElementChild;
+        icon.classList.remove('completed');
+
+      }
+    });
+  });
+}
+
+function addLiClickListeners() {
+
+  const lis = document.querySelectorAll('li');
+
+  lis.forEach((element) => {
+
+    element.addEventListener('click', () => {
+
+      if (!element.classList.contains('completed')) {
+        element.classList.add('completed');
+        const icon = element.firstElementChild;
+        icon.classList.add('completed');
+      }
+    });
+
+  });
+}
+
+function addMarkAllButtonListener() {
+
+  const markAllButton = document.getElementById('toggleAll');
+
+  markAllButton.addEventListener('click', () => {
+
+    if (allItemsIncomplete) {
+      markAllComplete();
+      markAllButton.innerText = 'Mark All Incomplete';
+    }
+
+    else {
+      markAllIncomplete();
+      markAllButton.innerText = 'Mark All Complete';
+
+    }
+
+  });
+
+
+}
+
+function markAllComplete() {
+
+  const lis = document.body.querySelectorAll('li');
+  lis.forEach((li) => {
+    if (!li.classList.contains('completed')) {
+     li.classList.add('completed');
+     li.firstElementChild.classList.add('completed');
+    }
+  });
+  allItemsIncomplete = false;
+}
+
+function markAllIncomplete() {
+
+  const lis = document.body.querySelectorAll('li');
+  lis.forEach((li) => {
+    if (li.classList.contains('completed')) {
+     li.classList.remove('completed');
+     li.firstElementChild.classList.remove('completed');
+    }
+  });
+  allItemsIncomplete = true;
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+
+  setPageTitle();
+  displayGroceries();
+
+  addLiClickListeners();
+  addLiDoubleClickListeners();
+
+  addMarkAllButtonListener();
+
+});

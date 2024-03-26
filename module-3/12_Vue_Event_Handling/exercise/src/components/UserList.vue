@@ -15,7 +15,8 @@
       <tbody>
         <tr>
           <td>
-            <input type="checkbox" id="selectAll" />
+            <input type="checkbox" id="selectAll" @click="selectOrDeselectAll($event)" 
+            :checked=" users.length === selectedUsersIds.length ? true : false "/>
           </td>
           <td>
             <input type="text" id="firstNameFilter" v-model="filter.firstName" />
@@ -44,7 +45,7 @@
           v-bind:class="{ deactivated: user.status === 'Inactive' }"
         >
           <td>
-            <input type="checkbox" v-bind:id="user.id" v-bind:value="user.id" />
+            <input type="checkbox" v-bind:id="user.id" v-bind:value="user.id" v-model="selectedUsersIds"/>
           </td>
           <td>{{ user.firstName }}</td>
           <td>{{ user.lastName }}</td>
@@ -52,38 +53,38 @@
           <td>{{ user.emailAddress }}</td>
           <td>{{ user.status }}</td>
           <td>
-            <button class="btnActivateDeactivate">Activate or Deactivate</button>
+            <button class="btnActivateDeactivate" @click="toggleStatus(user.id)">{{ user.status === 'Active'  ? 'Deactivate' : 'Activate' }}</button>
           </td>
         </tr>
       </tbody>
     </table>
 
     <div class="all-actions">
-      <button>Activate Users</button>
-      <button>Deactivate Users</button>
-      <button>Delete Users</button>
+      <button v-bind:disabled="!hasSelectedUsers" @click="activateUsers">Activate Users</button>
+      <button v-bind:disabled="!hasSelectedUsers" @click="deactivateUsers">Deactivate Users</button>
+      <button v-bind:disabled="!hasSelectedUsers" @click="deleteUsers">Delete Users</button>
     </div>
 
-    <button>Add New User</button>
+    <button @click="toggleForm">Add New User</button>
 
-    <form id="frmAddNewUser">
+    <form v-show="showNewUserForm"  id="frmAddNewUser">
       <div class="field">
         <label for="firstName">First Name:</label>
-        <input type="text" id="firstName" name="firstName" />
+        <input type="text" id="firstName" name="firstName" v-model="newUser.firstName"/>
       </div>
       <div class="field">
         <label for="lastName">Last Name:</label>
-        <input type="text" id="lastName" name="lastName" />
+        <input type="text" id="lastName" name="lastName" v-model="newUser.lastName"/>
       </div>
       <div class="field">
         <label for="username">Username:</label>
-        <input type="text" id="username" name="username" />
+        <input type="text" id="username" name="username" v-model="newUser.username"/>
       </div>
       <div class="field">
         <label for="emailAddress">Email Address:</label>
-        <input type="text" id="emailAddress" name="emailAddress" />
+        <input type="text" id="emailAddress" name="emailAddress" v-model="newUser.emailAddress"/>
       </div>
-      <button type="submit" class="btn save">Save User</button>
+      <button type="submit" class="btn save" @click.prevent="addNewUser">Save User</button>
     </form>
   </div>
 </template>
@@ -92,6 +93,11 @@
 export default {
   data() {
     return {
+
+      selectedUsersIds: [],
+
+      showNewUserForm: false,
+
       filter: {
         firstName: "",
         lastName: "",
@@ -99,7 +105,9 @@ export default {
         emailAddress: "",
         status: ""
       },
+
       nextUserId: 7,
+
       newUser: {
         id: null,
         firstName: "",
@@ -108,6 +116,7 @@ export default {
         emailAddress: "",
         status: "Active"
       },
+
       users: [
         {
           id: 1,
@@ -161,11 +170,75 @@ export default {
     };
   },
   methods: {
+
+    activateUsers() { 
+      for (let i = this.selectedUsersIds.length-1; i >= 0; i--) {
+        const usersIndex = this.selectedUsersIds.pop() - 1;
+        this.users[usersIndex].status = 'Active';
+      }
+    },
+
+    deactivateUsers() {
+      for (let i = this.selectedUsersIds.length-1; i >= 0; i--) {
+        const usersIndex = this.selectedUsersIds.pop() - 1;
+        this.users[usersIndex].status = 'Inactive';
+      }
+    },
+
+    deleteUsers() {
+      for (let i = this.selectedUsersIds.length-1; i >= 0; i--) {
+        const usersIndex = this.selectedUsersIds.pop() - 1;
+        this.users.splice(usersIndex, 1);
+      }
+    },
+
     getNextUserId() {
       return this.nextUserId++;
+    },
+    toggleForm() {
+      if(this.showNewUserForm) {
+        this.showNewUserForm = false;
+      }
+      else {
+        this.showNewUserForm = true;
+      }
+    },
+    addNewUser() {
+      this.newUser.id = this.getNextUserId();
+      this.newUser.status = 'Active';
+      this.users.push(this.newUser);
+      this.newUser = {};
+    },
+    toggleStatus(id) {
+      for (let i = 0; i < this.users.length; i++ ) {
+        if (this.users[i].id == id) {
+          if (this.users[i].status === 'Active') {
+            this.users[i].status = 'Inactive';
+          }
+          else {
+            this.users[i].status = 'Active';
+          }
+        }
+      }
+    },
+
+    selectOrDeselectAll(event) {
+      if (event.target.checked == true) {
+        this.users.forEach((user) => {
+          this.selectedUsersIds.push(user.id);
+        });
+      }
+      else {
+        this.selectedUsersIds = [];
+      }
+
     }
   },
   computed: {
+    hasSelectedUsers() {
+      return this.selectedUsersIds.length > 0;
+    },
+
     filteredList() {
       let filteredUsers = this.users;
       if (this.filter.firstName != "") {

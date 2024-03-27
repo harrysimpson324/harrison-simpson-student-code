@@ -1,0 +1,1 @@
+All data is taken from https://www.databasestar.com/sample-database-superheroes/ although I modified it to use the default schema.

@@ -165,7 +165,7 @@ export default {
       if (this.reviews.length === 0) {
         return 0;
       }
-      
+
       let sum = this.reviews.reduce((currentSum, review) => {
         return currentSum + review.rating;
       }, 0);
@@ -216,7 +216,7 @@ export default {
       return reviewsWithNumStars.length;
     },
   }
-  
+
 };
 </script>
 

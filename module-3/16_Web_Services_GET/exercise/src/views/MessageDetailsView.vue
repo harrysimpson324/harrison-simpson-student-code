@@ -12,6 +12,7 @@
 
 <script>
 import MessageDetails from '../components/MessageDetails.vue';
+import MessageService from '../services/MessagesService.js';
 
 export default {
   components: {
@@ -28,6 +29,10 @@ export default {
     getMessage(id) {
       
       // TODO - Get data from API and set `topics` property
+      MessageService.get(id).then((resp) => {
+        this.message = resp.data;
+        this.isLoading = false;
+      });
 
     },
   },

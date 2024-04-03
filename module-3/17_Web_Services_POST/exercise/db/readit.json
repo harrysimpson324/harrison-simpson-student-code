@@ -103,32 +103,7 @@
   ],
   "messages": [
     {
-      "id": 1001,
-      "topicId": 1,
-      "created": "2023-04-27T12:10:02.000Z",
-      "title": "Getting Started in Programming",
-      "messageText": "Hi everyone! I'm new to programming and excited to learn. Any tips on how to get started? Which programming language should I begin with?"
-    },
-    {
-      "id": 1002,
-      "topicId": 1,
-      "created": "2023-04-28T14:51:14.000Z",
-      "title": "Tips & Resources to Get Started",
-      "messageText": "Hello fellow beginners!\n\nI've been learning programming for a few weeks now, and I wanted to share some of my favorite online resources. Codecademy and freeCodeCamp have been incredibly helpful!\n\nIt's also important to keep coding a little each day while you learn."
-    },
-    {
-      "id": 1003,
-      "topicId": 1,
-      "created": "2023-04-28T15:14:29.000Z",
-      "title": "Struggling with Loops",
-      "messageText": "Hey there, I'm having trouble understanding loops in Python. Can anyone explain them in simple terms with some examples? I'd appreciate any help!"
-    },
-    {
-      "id": 1004,
-      "topicId": 1,
-      "created": "2023-04-30T10:11:01.000Z",
-      "title": "Re: Struggling with Loops",
-      "messageText": "Hey! In Python, 'for' loops are used to iterate over elements in a list, like this:\n\nnumbers = [1, 2, 3, 4, 5]\n\nfor num in numbers:\n\tprint(num)\n\nOutput:\n1\n2\n3\n4\n5\n\n'while' loops repeat a block of code while a condition is true, like this:\n\ncount = 0\n\nwhile count < 5:\n\tprint('Hello')\n\tcount += 1\n\nOutput:\nHello\nHello\nHello\nHello\nHello\n\nI hope this example helps! Let me know if you have more questions."
+      "id": 1001
     },
     {
       "id": 1005,

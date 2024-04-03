@@ -12,6 +12,8 @@
 </template>
 
 <script>
+import TopicService from '../services/TopicService.js';
+
 export default {
   props: {
     topic: {
@@ -32,7 +34,7 @@ export default {
   },
   methods: {
     submitForm() {
-      // Do client-side form validation 
+      // Do client-side form validation - early exit if validateForm() returns false
       if (!this.validateForm()) {
         //Form isn't valid, user must update and submit again.
         return;
@@ -41,12 +43,42 @@ export default {
       if (this.editTopic.id === 0) {
 
         // TODO - Do an add, then navigate Home on success.
+        TopicService.addTopic(this.editTopic)
+        .then((response) => {
+          if (response.status == 201) {
+            this.$store.commit(
+                'SET_NOTIFICATION',
+                {
+                  message: 'A new topic was added.',
+                  type: 'success'
+                });
+           this.$router.push({name: 'HomeView'});
+          }
+        })
         // For errors, call handleErrorResponse
+        .catch((error) => {
+          this.handleErrorResponse(error, 'adding');
+        });
 
       } else {
 
         // TODO - Do an edit, then navigate back to Topic Details on success
+        TopicService.updateTopic(this.editTopic.id, this.editTopic)
+        .then((response) => {
+          if (response.status == 200) {
+            this.$store.commit('SET_NOTIFICATION',
+            {
+              message: `Topic ${this.editTopic.id} has been updated.`,
+              type: 'success'
+            });
+            this.$router.push({name: 'TopicDetailsView', params: { topicId: this.editTopic.id }});
+          }
+        })
+
         // For errors, call handleErrorResponse
+        .catch((error) => {
+          this.handleErrorResponse(error, 'updating');
+        });
 
       }
     },
@@ -68,6 +100,7 @@ export default {
         this.$store.commit('SET_NOTIFICATION', `Error ${verb} topic. Request could not be created.`);
       }
     },
+
     validateForm() {
       let msg = '';
 

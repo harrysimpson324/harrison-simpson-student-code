@@ -16,7 +16,7 @@
 </template>
 
 <script>
-import messageService from '../services/MessageService';
+import MessageService from '../services/MessageService.js';
 
 export default {
   props: {
@@ -49,13 +49,38 @@ export default {
       if (this.editMessage.id === 0) {
         
         // TODO - Do an add, then navigate Home on success.
+        MessageService.addMessage(this.editMessage)
+        .then((response) =>{
+          if (response.status == 201) {
+            this.$store.commit('SET_NOTIFICATION', {
+              message: `Message, "${this.editMessage.title}" has been added.`,
+              status: 'success'
+            });
+            this.$router.push({name: 'TopicDetailsView', params: {topicId: this.editMessage.topicId}});
+          }
+        })
         // For errors, call handleErrorResponse
+        .catch((error) => {
+          this.handleErrorResponse(error, 'adding');
+        });
 
       } else {
         
         // TODO - Do an edit, then navigate back to Message Details on success
+        MessageService.updateMessage(this.editMessage.id, this.editMessage)
+        .then((response) => {
+          if (response.status == 200) {
+            this.$store.commit('SET_NOTIFICATION', {
+              message: `Message, "${this.editMessage.title}" has been updated.`,
+              status: 'success'
+            });
+            this.$router.push({name: 'MessageDetailsView', params: {topicId: this.editMessage.topicId, messageId: this.editMessage.id}});
+          }
+        })
         // For errors, call handleErrorResponse
-
+        .catch((error) => {
+          this.handleErrorResponse(error, 'updating');
+        });
       }
     },
     cancelForm() {

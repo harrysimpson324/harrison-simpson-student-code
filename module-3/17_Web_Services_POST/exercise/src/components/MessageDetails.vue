@@ -38,8 +38,21 @@ export default {
       if (confirm("Are you sure you want to delete this message? This action cannot be undone.")) {
         
         // TODO - Do a delete, then navigate to Topic Details on success
+        const holder = this.message
+        messageService.deleteMessage(this.message.id)
+        .then((response) => {
+          if (response.status == 200) {
+            this.$store.commit('SET_NOTIFICATION', {
+              message: `Message, "${holder.title}" has been deleted.`,
+              status: 'success'
+            });
+            this.$router.push({name: 'TopicDetailsView', params: {topicId: holder.topicId}});
+          }
+        })
         // For errors, call handleErrorResponse
-
+        .catch((error) => {
+          this.handleErrorResponse(error, 'deleting');
+        });
       }
     },
     handleErrorResponse(error, verb) {

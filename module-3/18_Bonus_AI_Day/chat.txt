@@ -1,0 +1,234 @@
+09:10:28 From Larry "Devin" Carter to Everyone:
+	I'm here to train
+09:10:43 From Quynh (Quinn) (she/her) to Everyone:
+	Reacted to "I'm here to train" with 😆
+09:10:45 From Davy Tabler to Everyone:
+	Reacted to "I'm here to train" with 😆
+09:10:50 From Harry Simpson to Everyone:
+	Reacted to "I'm here to train" with 🏋️‍♀️
+09:10:50 From Alison Hall to Everyone:
+	Reacted to "I'm here to train" with 😂
+09:11:03 From Harry Simpson to Everyone:
+	Reacted to "I'm here to train" with 🏋️
+09:11:05 From Harry Simpson to Everyone:
+	Removed a 🏋️‍♀️ reaction from "I'm here to train"
+09:11:34 From Michael Rowan to Everyone:
+	Reacted to "I'm here to train" with 😆
+09:14:29 From Karrington Gatlin (She/Her) to Everyone:
+	Reacted to "I'm here to train" with 😆
+09:20:34 From Harry Simpson to Everyone:
+	with the window selected you can hold windows key then arrow key and that makes it easy
+09:29:00 From Harry Simpson to Everyone:
+	tiiiiiight
+09:29:08 From Harry Simpson to Everyone:
+	copilot everywhere
+09:29:44 From Larry "Devin" Carter to Everyone:
+	Ben is giving us his PoWeR!!!
+09:29:49 From Quynh (Quinn) (she/her) to Everyone:
+	Reacted to "Ben is giving us his..." with 😆
+09:29:52 From Michael Rowan to Everyone:
+	Reacted to "Ben is giving us his..." with 🤣
+09:36:29 From Harry Simpson to Everyone:
+	if you get a popup that tells you to sign into GitHub with VSCode, i think you need to do that
+09:36:49 From Harry Simpson to Everyone:
+	yes bottom right
+09:37:34 From Harry Simpson to Everyone:
+	if you hover over the copilot thing or click on it it might give you another link to authorize
+09:41:32 From Revathi Ajjarapu to Everyone:
+	@Harry Simpson @Larry "Devin" Carter Thank you
+09:44:28 From Harry Simpson to Everyone:
+	Replying to "@Harry Simpson @Larr..."
+	
+	happy to help :D
+09:49:52 From Larry "Devin" Carter to Everyone:
+	Reacted to "@Harry Simpson @Larr..." with 👍
+09:50:56 From Larry "Devin" Carter to Everyone:
+	It's logic can cascade into nonsense sometimes too.
+09:50:58 From Harry Simpson to Everyone:
+	Also, dont try to write perfect code - debugging is part of the process of writing code and its too stressful to even try to write perfect code
+09:51:17 From Quynh (Quinn) (she/her) to Everyone:
+	Reacted to "Also, dont try to wr..." with ❤️
+09:51:23 From Michael Rowan to Everyone:
+	Reacted to "Also, dont try to wr..." with ❤️
+09:51:28 From Larry "Devin" Carter to Everyone:
+	alculateDistanceInKmAndMilesAndMetersAndMilesAndKmAndMetersAndMiles
+09:51:50 From Michael Rowan to Everyone:
+	Reacted to "alculateDistanceInKm..." with 🤣
+09:51:51 From Larry "Devin" Carter to Everyone:
+	mine just wanted to write this function
+09:52:30 From Quynh (Quinn) (she/her) to Everyone:
+	Reacted to "alculateDistanceInKm..." with 🤣
+09:53:36 From Umer Abubeker to Everyone:
+	for some reason I don't get auto suggestion from copilot as I type convertToKi...
+09:54:05 From Quynh (Quinn) (she/her) to Everyone:
+	Reacted to "for some reason I do..." with 😕
+09:56:44 From Harry Simpson to Everyone:
+	Replying to "for some reason I do..."
+	
+	if you click the GitHub icon on the bottom right, do you have everthing enabled?
+09:57:00 From Harry Simpson to Everyone:
+	Replying to "for some reason I do..."
+	
+	specifically "completions"?
+09:57:41 From Harry Simpson to Everyone:
+	Mine made comments to identify the constructor and the getters/setters
+09:57:46 From Harry Simpson to Everyone:
+	p crazy
+09:59:12 From Umer Abubeker to Everyone:
+	Replying to "for some reason I do..."
+	
+	yeah, I have them all enabled
+10:17:12 From Quynh (Quinn) (she/her) to Everyone:
+	Replying to "for some reason I do..."
+	
+	if you’re still stuck, maybe ask Ben…
+10:18:02 From Umer Abubeker to Everyone:
+	Replying to "for some reason I do..."
+	
+	yeah, i will ask him
+10:20:21 From Harry Simpson to Everyone:
+	Replying to "for some reason I do..."
+	
+	and reload it
+10:20:27 From Harry Simpson to Everyone:
+	Replying to "for some reason I do..."
+	
+	where it says reload required
+10:21:36 From Umer Abubeker to Everyone:
+	Replying to "for some reason I do..."
+	
+	I did it, Thanks @Harry Simpson
+10:30:19 From Michael Rowan to Everyone:
+	@Revathi Ajjarapu do you see intillicode in the extensions?
+10:33:30 From Revathi Ajjarapu to Everyone:
+	Replying to "@Revathi Ajjarapu do..."
+	
+	hey sorry, i just saw your message. thanks for trying to help!
+10:33:53 From Michael Rowan to Everyone:
+	Replying to "@Revathi Ajjarapu do..."
+	
+	Glad you're back on track!
+10:35:14 From Revathi Ajjarapu to Everyone:
+	Reacted to "Glad you're back on ..." with 👍
+10:39:10 From Revathi Ajjarapu to Everyone:
+	how do you make the auto suggestion to actually print on the screen?
+10:39:25 From Revathi Ajjarapu to Everyone:
+	when i press enter, its not getting print
+10:39:31 From Alison Hall to Everyone:
+	the tab key
+10:39:39 From Quynh (Quinn) (she/her) to Everyone:
+	Reacted to "the tab key" with 👆
+10:39:47 From Revathi Ajjarapu to Everyone:
+	Replying to "the tab key"
+	
+	Thank you!
+10:40:19 From Revathi Ajjarapu to Everyone:
+	Reacted to "the tab key" with ❤️
+10:50:20 From Dustin Dobos to Everyone:
+	Anyone else have their server crash?
+10:52:47 From Harry Simpson to Everyone:
+	i can't run the server app, says my java version is wrong
+10:53:36 From Michael Rowan to Everyone:
+	yeah crash and burn
+10:53:57 From Dustin Dobos to Everyone:
+	I think mine isn't working because I didn't name my database the exact same way as the Readme
+10:54:34 From Daniel To (He/Him) to Everyone:
+	The error I get is Connection to localhost:5432 refused.
+11:03:44 From Karrington Gatlin (She/Her) to Everyone:
+	am i doing something wrong in postgres. I created the database, copied and pasted the script, but when i run it, it says"Warning: there is no transaction in progress COMMIT"
+11:05:36 From Harry Simpson to Everyone:
+	Replying to "am i doing something..."
+	
+	could you have missed the first line when you copied and pasted it?
+11:06:35 From Karrington Gatlin (She/Her) to Everyone:
+	Replying to "am i doing something..."
+	
+	yes i did, thank you!!!
+11:06:42 From Karrington Gatlin (She/Her) to Everyone:
+	Reacted to "could you have misse..." with ❤️
+11:34:49 From Michael Rowan to Everyone:
+	@Quynh (Quinn) (she/her) were you able to get the server working on your mac? I feel like its my computer problem lol
+11:35:06 From Quynh (Quinn) (she/her) to Everyone:
+	Reacted to "@Quynh (Quinn) (she/..." with ❤️
+11:36:05 From Larry "Devin" Carter to Everyone:
+	Quynh ❤️
+11:36:15 From Quynh (Quinn) (she/her) to Everyone:
+	Replying to "@Quynh (Quinn) (she/..."
+	
+	I had to reinstall my pgAdmin and am running into issue with setting up my server
+11:36:20 From Quynh (Quinn) (she/her) to Everyone:
+	Reacted to "Quynh ❤️" with ❤️
+11:37:37 From Michael Rowan to Everyone:
+	Replying to "@Quynh (Quinn) (she/..."
+	
+	yeah i think springboot has beef with mac
+11:37:45 From Quynh (Quinn) (she/her) to Everyone:
+	Reacted to "yeah i think springb..." with 😆
+11:38:07 From Quynh (Quinn) (she/her) to Everyone:
+	Replying to "@Quynh (Quinn) (she/..."
+	
+	I’ll find out on my end and let you know later too if I get it to work
+11:38:15 From Quynh (Quinn) (she/her) to Everyone:
+	Replying to "@Quynh (Quinn) (she/..."
+	
+	if you can on your end, please let me know
+11:38:18 From Michael Rowan to Everyone:
+	Replying to "@Quynh (Quinn) (she/..."
+	
+	thanks! same here
+11:38:22 From Quynh (Quinn) (she/her) to Everyone:
+	Reacted to "thanks! same here" with ❤️
+11:38:23 From Michael Rowan to Everyone:
+	Reacted to "if you can on your e..." with ❤️
+11:40:02 From Harry Simpson to Everyone:
+	especially for a larger codebase, thats a great point Allison
+11:40:26 From Harry Simpson to Everyone:
+	Replying to "especially for a lar..."
+	
+	Alison*
+11:40:44 From Alison Hall to Everyone:
+	Reacted to "especially for a lar..." with ❤️
+11:40:47 From Alison Hall to Everyone:
+	Reacted to "Alison*" with ❤️
+11:47:06 From Larry "Devin" Carter to Everyone:
+	I asked it to solve the 3 body problem and it sure tried. Tracked time plus mass, x, y, z of 3 objects.
+11:48:58 From Michael Rowan to Everyone:
+	Reacted to "I asked it to solve ..." with 🤣
+11:49:09 From Quynh (Quinn) (she/her) to Everyone:
+	Reacted to "I asked it to solve ..." with 🤣
+11:49:44 From Michael Rowan to Everyone:
+	Replying to "I asked it to solve ..."
+	
+	1000 year chaotic era with chatgpt
+11:54:19 From Larry "Devin" Carter to Everyone:
+	Replying to "I asked it to solve ..."
+	
+	followed by a butlerian jihad
+11:54:37 From Michael Rowan to Everyone:
+	Tori you rascal
+11:54:46 From Larry "Devin" Carter to Everyone:
+	Replying to "I asked it to solve ..."
+	
+	then human calculators
+11:54:50 From Quynh (Quinn) (she/her) to Everyone:
+	Reacted to "Tori you rascal" with ❤️
+11:54:54 From Larry "Devin" Carter to Everyone:
+	Replying to "I asked it to solve ..."
+	
+	then worm god
+11:54:58 From Michael Rowan to Everyone:
+	Reacted to "then worm god" with 🤣
+11:54:58 From Quynh (Quinn) (she/her) to Everyone:
+	Removed a ❤️ reaction from "Tori you rascal"
+11:55:01 From Quynh (Quinn) (she/her) to Everyone:
+	Reacted to "Tori you rascal" with 😆
+11:55:05 From Larry "Devin" Carter to Everyone:
+	Reacted to "Tori you rascal" with 😆
+11:57:29 From Larry "Devin" Carter to Everyone:
+	my team is just going to tell copilot to do the capstone for us and we'll go to the beach
+11:57:42 From Quynh (Quinn) (she/her) to Everyone:
+	Reacted to "my team is just goin..." with 😆
+11:57:44 From Alison Hall to Everyone:
+	Reacted to "my team is just goin..." with ❤️
+11:57:47 From Michael Rowan to Everyone:
+	Reacted to "my team is just goin..." with ❤️

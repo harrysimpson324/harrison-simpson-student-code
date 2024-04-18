@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31019.35
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoopsArraysTutorial", "LoopsArraysTutorial\LoopsArraysTutorial.csproj", "{D71DA66D-D42B-4052-9453-BC3E4AC89796}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D71DA66D-D42B-4052-9453-BC3E4AC89796}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D71DA66D-D42B-4052-9453-BC3E4AC89796}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D71DA66D-D42B-4052-9453-BC3E4AC89796}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D71DA66D-D42B-4052-9453-BC3E4AC89796}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0FBBA9D1-025B-4958-9ABF-7253131A3357}
+	EndGlobalSection
+EndGlobal
